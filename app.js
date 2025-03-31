@@ -110,7 +110,11 @@ app.use("/listings",listingRouter)
 app.use("/listings/:id/reviews",reviewRouter)
 app.use("/",userRouter)
 
+app.use("",async(req,res)=>{
+    const allListings= await Listing.find({});
+    res.render("./listings/index.ejs",{allListings});
 
+})
 
 app.get("/testListing",async (req,res)=>{
 let sampleListing=new Listing({
