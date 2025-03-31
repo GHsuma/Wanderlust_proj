@@ -16,6 +16,7 @@ body{
 .navbar{
     height:5rem;
     background-color: white;
+
 }
 .navbar-collapse{
     background-color: white;
@@ -123,4 +124,10 @@ object-fit: cover !important;
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+
+/* map */
+#map{
+    width: 45vw;
+     height: 300px;
 }
